@@ -11,11 +11,12 @@ import DepartamentosComponent from './components/maestrodetalle/DepartamentosCom
 import CochesComponent from './components/maestrodetalle/CochesComponent';
 import MenuComponent from './components/MenuComponent';
 import Router from './components/Router';
-
+import Popper from 'popper.js';
+import $ from 'jquery';
+import 'bootstrap/dist/js/bootstrap.bundle';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div style={{margin: "auto", width: "50%"}}>
-        <MenuComponent/>
         <Router/>
     </div>
 );
