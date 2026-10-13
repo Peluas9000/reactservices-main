@@ -28,6 +28,11 @@ export default class CollatzComponent extends Component {
     componentDidMount = () => {
         this.generarTablaCollatz();
     }
+    componentDidUpdate = (prevProps) => {
+        if (prevProps.numero !== this.props.numero) {
+            this.generarTablaCollatz();
+        }
+    }
 
   render() {
 
