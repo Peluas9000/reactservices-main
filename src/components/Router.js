@@ -5,6 +5,7 @@ import HomeComponent from "./HomeComponent";
 import TablaMultiplicar from "./TablaMultiplicar";
 import NotFoundComponent from "./NotFoundComponent";
 import CollatzComponent from "./CollatzComponent";
+import MenuComponent from "./MenuComponent";
 export default class Router extends Component{
     render() {
         function TablaMultiplicarElement() {
@@ -22,6 +23,7 @@ export default class Router extends Component{
 
         return (
             <BrowserRouter>
+            <MenuComponent/>
                 <Routes>
                     <Route path="/" element={<HomeComponent/>}/>
                     <Route path="/tabla/:minumero" element={<TablaMultiplicarElement/>}/>
